@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=3">
+    <title>Maquetacion Web</title>\
+    <!--el type puede ser omitido a no ser que debamos indicar que la hoja de estilos
+    es distinta a "text/css", podrian ser hojas de estilos con servidor, con les, zas, stylus que son herramientas para preprocesar CSS. 
+    El atributo stylesheet le dice como tiene que implementarse --> 
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body>
+    <!--(header#header>.header)+(main>article*3>section*2)+(footer#footer)--> 
+    <header id="header"> <!--CONTENIDO INICIAL-->
+        <div class="header">
+            <h1>Maquetación web</h1>
+            <p>&lt;HTML&gt; &amp; {CSS}</p>
+        </div>
+        <!--nav>li.menu>li*5>a{Link $}-->
+        <nav>
+            <li class="menu">
+                <!--Rutas Internas / Relativas-->
+                <li><a href="#">Inicio</a></li>
+                <li><a href="about.html">Acerca de</a></li>
+                <li><a href="gallery.html">Galeria</a></li>
+                <!--Ruta ancla / Marcador (#Id)-->
+                <li><a href="#contact">Contacto</a></li>
+                <!--rutas externas / absolutas-->
+                <li><a href="">Link 5</a></li>
+            </li>
+        </nav>
+
+    </header>
+    <main> <!--CONTENIDO PRINCIPAL-->
+        <article><!--CONTENIDO INDEPENDIENTE / ARTICULO -->
+            <header class="header">
+                <h1>Clase 1: Introduccion Maquetación</h1>
+            </header>
+            <section>
+                <header>
+                    <h1>tema 1: Elementos Semanticos</h1>
+                </header>
+            </section> <!--CONTENIDO CONTEXTUALIZADO / SECCION-->
+            <section>
+                <header>
+                    <h1>tema 2: Jerarquia de selectores</h1>
+                </header>
+            </section>
+        </article>
+        <article>
+            <section></section>
+            <section></section>
+        </article>
+        <article>
+            <section></section>
+            <section></section>
+        </article>
+    </main>
+    <footer id="footer"></footer> <!--CONTENIDO PIE-->
+    <script src="js/scripts.js"></script>"
+</body>
+</html>

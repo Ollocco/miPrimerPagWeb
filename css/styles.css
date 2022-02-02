@@ -1,0 +1,52 @@
+/*REGLAS GENERALES*/
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Raleway:ital,wght@1,200;1,400;1,600;1,900&display=swap');
+/*APUNTA A TODOS LOS ELEMENTOS. Rompemos la ley de herencia*/
+*{
+    box-sizing:border-box;
+    /*
+    CONTEXT-BOX
+        width + padding + border    = final-width
+        300px +  50px   + 2px       = 404px
+    BORDER-BOX(calcula el tamaño final en base de el width
+        width = final-width
+        width - padding - border    = content-width
+        300px - 50px    -2px        = 196px */
+    font-family: Raleway, Bebas Neue, sans-serif ;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.header{
+    color:#ccc;
+    background-color: #012;
+    width: 300px;
+    padding: 50px;
+    border: 2px solid #248;
+}
+/* ENCABEZADO Y PIE DE PAG*/
+#header, #footer{
+    color:#ccc;
+    background-color: #012;
+    text-transform: uppercase;
+    padding: 20px;    
+}
+}
+/*Selectores
+    Etiqueta(header)
+        Generales ----> header {color: darkblue}
+        Anidados  ----> header h1{color:blue;}
+    Clase (.header)
+        Generales ----> .header {color:yellow;}
+        Anidados  ----> .header h1 {color:organge;}
+    Id (#header)
+        Generales ----> #header {color:tomato;}
+        Anidados  ----> #header h1 {color: darkread;} 
+        */
+/*header {color: darkblue}
+header h1{color:blue;}
+.header {color:yellow;}
+.header h1 {color:orange;}
+#header {color:tomato;}
+#header h1 {color: darkred;} 
